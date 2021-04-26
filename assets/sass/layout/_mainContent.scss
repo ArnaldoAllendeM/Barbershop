@@ -1,0 +1,26 @@
+// Nesting
+.mainContent {
+    width: 100%;
+    padding: 1rem;
+//   css del titulo
+    &__title {
+      font-family: $playFair;
+      color: $raisinBlack;      
+      font-weight: $regular;
+      font-size: $large;
+      padding-right: 75px;
+      padding-left: 0px;
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+//   css del parrafo
+    &__paragraph {
+      font-family: $roboto;
+      color: $raisinBlack;      
+      font-weight: $light;
+      font-size: $medium;
+    //   espaciamiento
+      line-height: 32px;
+      text-align: justify;  
+    }
+  }

@@ -1,0 +1,46 @@
+/* hero section */
+
+.header {
+    height: 70vh;
+    color: $white;
+    background: url(/assets/images/post-image.jpg);
+    background-position: center;
+    background-size: cover;
+    // seteo de datos para usar display flex
+    // position relative en el padre y absolute en los hijos
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &__arrow-down {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-size: $x-large;
+      animation: bounce 2s ease infinite;
+    }
+    @keyframes bounce {
+        0%, 25% ,55% ,75% ,100%{
+            transform: translateY(0);
+        }
+        45%{ transform: translateY(-20px);}
+        65%{
+            transform: translateY(-10px);
+        }
+        85%{
+            transform: translateY(-5px);
+        }
+    }
+    &__title {
+      font-family: $playFair;
+      font-size: $xx-large;
+      font-weight: $black;
+      font-style: italic;
+      @include smartphone{
+          font-size: $x-large;
+      }
+    }
+  }

@@ -1,0 +1,15 @@
+// !important para quitar restricciones de bootstrap
+.barraNavegacion {
+    background-color: $eerieBlack !important;
+    font-family: $roboto;
+    font-size: $medium;
+  
+    .nav-item a {
+      &:link {
+        color: $white !important;
+      }  
+      &:hover {
+        color: $ruddyPink !important;
+      }
+    }
+  }

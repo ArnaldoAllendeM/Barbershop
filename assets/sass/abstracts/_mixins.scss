@@ -1,0 +1,5 @@
+@mixin smartphone {
+    @media(max-width: 43.75em){
+        @content;
+    }
+}
